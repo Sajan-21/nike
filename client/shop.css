@@ -1,0 +1,15 @@
+.img-shop{
+    width: 20vw;
+    height: 50vh;
+}
+.allProductsContainer{
+    width: 86%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 3%;
+    column-gap: 2%;
+}
+.box:hover{
+    box-shadow: 1px 1px 20px rgb(213, 213, 213);
+}

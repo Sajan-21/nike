@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>editProduct</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="editProduct.css">
+    </head>
+
+    <body onload="dotValue()">
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main class="container px-5">
+
+            <div class="text-center p-3">
+                <img src="./images/icons8-nike-50.png" alt="">
+            </div>
+
+            <form class="d-flex flex-column gap-4 justify-content-center align-items-center p-5 border shadow-lg p-3 mb-5 bg-body rounded" onsubmit="editProduct(event)">
+                <div class="d-flex flex-column gap-2 justify-content-center">
+                    <label for="name" class="form-boxes">name</label>
+                    <input type="text" name="name" id="name" class="input p-2 rounded form-boxes">
+                </div>
+                <div class="d-flex flex-column gap-2 justify-content-center">
+                    <label for="image" class="form-boxes">image</label>
+                    <input type="text" name="image" id="image" class="input p-2 rounded form-boxes">
+                </div>
+                <div class="d-flex flex-column gap-2 justify-content-center">
+                    <label for="gender" class="form-boxes">gender</label>
+                    <select name="gender" id="gender" class="rounded p-2 form-boxes">
+                        <option selected>gender</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="others">both</option>
+                    </select>
+                </div>
+                <div class="d-flex flex-column gap-2 justify-content-center">
+                    <label for="category" class="form-boxes">category</label>
+                    <select name="category" id="category" class="rounded p-2 form-boxes">
+                        <option selected>category</option>
+                        <option value="sports">sports</option>
+                        <option value="clothes">clothes</option>
+                        <option value="footwears">footwears</option>
+                    </select>
+                </div>
+                <div class="d-flex flex-column gap-2 justify-content-center">
+                    <label for="color"class="form-boxes">color</label>
+                    <input type="text" name="color" id="color" class="input p-2 rounded form-boxes">
+                </div>
+                <div class="d-flex flex-column gap-2 justify-content-center">
+                    <label for="price"class="form-boxes">price</label>
+                    <input type="number" name="price" id="price" class="input p-2 rounded form-boxes">
+                </div>
+                <div class="d-flex flex-column gap-2 justify-content-center">
+                    <label for="size" class="form-boxes">size</label>
+                    <select name="size" id="size" class="rounded p-2 form-boxes">
+                        <option selected>size</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                        <option value="Xlarge">Xlarge</option>
+                    </select>
+                </div>
+                <div class="d-flex flex-column gap-2 justify-content-center">
+                    <label for="description" class="form-boxes">description</label>
+                    <input type="text" name="description" id="description" class="input p-2 rounded form-boxes">
+                </div>
+                <div class="d-flex flex-column gap-2 justify-content-center">
+                    <label for="rating" class="form-boxes">rating</label>
+                    <input type="number" name="rating" id="rating" class="input p-2 rounded form-boxes">
+                </div>
+                <input type="submit" value="submit" id="submit" class="input p-2 rounded form-submit btn btn-success">
+            </form>
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+         <script src="script.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
